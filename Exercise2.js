@@ -39,23 +39,23 @@ console.log(maxOfThree(12,6,3))
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
 
-// function isVowel(char){
-//   var vowels = ['a','e','i','o','u','y'];
+ function isVowel(char){
+  var vowels = ['a','e','i','o','u','y'];
 
-//   if(vowels.indexOf(char) !== -1) {
-//   	return true;
-//   }
-//   else {
-//   	return false;
-//   }
-// }
+ if(vowels.indexOf(char) !== -1) {
+  	return true;
+  }
+ else {
+  	return false;
+  }
+}
 
-// function log(resp) {
-// 	console.log(resp)
-// }
+function log(resp) {
+	console.log(resp)
+}
 
-// log(isVowel('t'));
-// log(isVowel('e'));
+console.log(isVowel('t'));
+console.log(isVowel('e'));
 
 // ---------------------
 // Write a function translate() that will translate a text into "Rovarspraket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
@@ -106,6 +106,13 @@ else {
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse(s) {
+  var o = '';
+  for (var i = s.length -1; i >= 0; i--)
+    o += s[i];
+  return o;
 }
+
+console.log(reverse('Shabo'))
+
+
