@@ -106,10 +106,10 @@ else {
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(s) {
+function reverse(name) {
   var o = '';
-  for (var i = s.length -1; i >= 0; i--)
-    o += s[i];
+  for (var i = name.length -1; i >= 0; i--)
+    o += name[i];
   return o;
 }
 
